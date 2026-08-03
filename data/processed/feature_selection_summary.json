@@ -1,0 +1,188 @@
+{
+  "constant_columns": [
+    "order_item_quantity_outlier",
+    "days_for_shipping_real_outlier",
+    "days_for_shipment_scheduled_outlier"
+  ],
+  "near_constant_columns": [
+    "sales_outlier"
+  ],
+  "duplicate_columns": [
+    {
+      "first_column": "customer_id",
+      "duplicate_column": "order_customer_id"
+    },
+    {
+      "first_column": "sales_per_customer",
+      "duplicate_column": "order_item_total"
+    },
+    {
+      "first_column": "order_item_quantity",
+      "duplicate_column": "order_item_quantity_capped"
+    },
+    {
+      "first_column": "order_item_product_price",
+      "duplicate_column": "product_price"
+    },
+    {
+      "first_column": "order_profit_per_order",
+      "duplicate_column": "benefit_per_order"
+    },
+    {
+      "first_column": "days_for_shipping_real",
+      "duplicate_column": "days_for_shipping_real_capped"
+    },
+    {
+      "first_column": "days_for_shipment_scheduled",
+      "duplicate_column": "days_for_shipment_scheduled_capped"
+    },
+    {
+      "first_column": "sales_per_customer_outlier",
+      "duplicate_column": "order_item_total_outlier"
+    },
+    {
+      "first_column": "order_item_quantity_outlier",
+      "duplicate_column": "days_for_shipping_real_outlier"
+    },
+    {
+      "first_column": "order_item_quantity_outlier",
+      "duplicate_column": "days_for_shipment_scheduled_outlier"
+    },
+    {
+      "first_column": "order_item_product_price_outlier",
+      "duplicate_column": "product_price_outlier"
+    },
+    {
+      "first_column": "order_profit_per_order_outlier",
+      "duplicate_column": "benefit_per_order_outlier"
+    },
+    {
+      "first_column": "days_for_shipping_real_outlier",
+      "duplicate_column": "days_for_shipment_scheduled_outlier"
+    },
+    {
+      "first_column": "sales_per_customer_capped",
+      "duplicate_column": "order_item_total_capped"
+    },
+    {
+      "first_column": "order_item_product_price_capped",
+      "duplicate_column": "product_price_capped"
+    },
+    {
+      "first_column": "order_profit_per_order_capped",
+      "duplicate_column": "benefit_per_order_capped"
+    }
+  ],
+  "highly_correlated_pairs": [
+    {
+      "feature_1": "sales",
+      "feature_2": "sales_per_customer",
+      "absolute_correlation": 0.9897
+    },
+    {
+      "feature_1": "sales",
+      "feature_2": "order_item_total",
+      "absolute_correlation": 0.9897
+    },
+    {
+      "feature_1": "sales_per_customer",
+      "feature_2": "order_item_total",
+      "absolute_correlation": 1.0
+    },
+    {
+      "feature_1": "order_item_quantity",
+      "feature_2": "order_item_quantity_capped",
+      "absolute_correlation": 1.0
+    },
+    {
+      "feature_1": "order_item_discount_rate",
+      "feature_2": "calculated_discount_percentage",
+      "absolute_correlation": 0.9999
+    },
+    {
+      "feature_1": "order_item_product_price",
+      "feature_2": "product_price",
+      "absolute_correlation": 1.0
+    },
+    {
+      "feature_1": "order_item_profit_ratio",
+      "feature_2": "profit_margin_percentage",
+      "absolute_correlation": 0.9967
+    },
+    {
+      "feature_1": "order_profit_per_order",
+      "feature_2": "benefit_per_order",
+      "absolute_correlation": 1.0
+    },
+    {
+      "feature_1": "days_for_shipping_real",
+      "feature_2": "order_to_shipping_days",
+      "absolute_correlation": 0.9974
+    },
+    {
+      "feature_1": "days_for_shipping_real",
+      "feature_2": "days_for_shipping_real_capped",
+      "absolute_correlation": 1.0
+    },
+    {
+      "feature_1": "days_for_shipment_scheduled",
+      "feature_2": "days_for_shipment_scheduled_capped",
+      "absolute_correlation": 1.0
+    },
+    {
+      "feature_1": "order_month",
+      "feature_2": "order_quarter",
+      "absolute_correlation": 0.9705
+    },
+    {
+      "feature_1": "order_month",
+      "feature_2": "order_week",
+      "absolute_correlation": 0.9747
+    },
+    {
+      "feature_1": "order_to_shipping_days",
+      "feature_2": "days_for_shipping_real_capped",
+      "absolute_correlation": 0.9974
+    },
+    {
+      "feature_1": "sales_per_customer_outlier",
+      "feature_2": "order_item_total_outlier",
+      "absolute_correlation": 1.0
+    },
+    {
+      "feature_1": "order_item_product_price_outlier",
+      "feature_2": "product_price_outlier",
+      "absolute_correlation": 1.0
+    },
+    {
+      "feature_1": "order_profit_per_order_outlier",
+      "feature_2": "benefit_per_order_outlier",
+      "absolute_correlation": 1.0
+    },
+    {
+      "feature_1": "sales_capped",
+      "feature_2": "sales_per_customer_capped",
+      "absolute_correlation": 0.9879
+    },
+    {
+      "feature_1": "sales_capped",
+      "feature_2": "order_item_total_capped",
+      "absolute_correlation": 0.9879
+    },
+    {
+      "feature_1": "sales_per_customer_capped",
+      "feature_2": "order_item_total_capped",
+      "absolute_correlation": 1.0
+    },
+    {
+      "feature_1": "order_item_product_price_capped",
+      "feature_2": "product_price_capped",
+      "absolute_correlation": 1.0
+    },
+    {
+      "feature_1": "order_profit_per_order_capped",
+      "feature_2": "benefit_per_order_capped",
+      "absolute_correlation": 1.0
+    }
+  ]
+}

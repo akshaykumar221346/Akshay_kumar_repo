@@ -1,0 +1,11 @@
+pandas
+numpy
+plotly
+streamlit
+sqlalchemy
+pymysql
+python-dotenv
+kagglehub
+openpyxl
+jupyter
+ipykernel
